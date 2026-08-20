@@ -1,0 +1,62 @@
+title: Jenkins is the way to great heights
+post_name: jenkins-is-something-cool
+authored_by: Vatsal Verma
+date: 2026-08-20T15:44:00.000+05:30
+tag_line: this is a user story by jenkins
+image: jenkins-world.png
+metadata:
+  platforms:
+    - Software
+    - Cloud
+  build_tools:
+    - Maven
+    - Gradle
+  organization: Jenkins
+  programming_languages:
+    - Cpp
+    - Java
+  project_website: https://jenkins.io
+  title: Jenkins is the way to great heights
+  company_website: ""
+  community_supports:
+    - Jenkins.io blogs & community
+  version_control_systems:
+    - Git
+    - github
+  industries:
+    - Software
+quotes:
+  - from: Vatsal Verma
+    content: Jenkins is the way to great heights
+    image: quote.png
+map:
+  authored_by: Vatsal Verma
+  location: India
+  geojson: '{"type":"Point","coordinates":[77.9765708,20.8957739]}'
+body_content:
+  title: Jenkins is the way to great heights
+  paragraphs:
+    - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+      est laborum. Sed ut perspiciatis unde omnis iste natus error sit
+      voluptatem
+    - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+      est laborum. Sed ut perspiciatis unde omnis iste natus error sit
+      voluptatem
+    - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+      est laborum. Sed ut perspiciatis unde omnis iste natus error sit
+      voluptatem
