@@ -16,8 +16,6 @@ collections:
     label: User Stories
     label_singular: User Story
 
-    # Existing repository structure:
-    # src/user-story/<post_name>/index.yaml
     folder: src/user-story
     path: '{{post_name}}/index'
     slug: 'index'
@@ -25,20 +23,8 @@ collections:
     extension: yaml
     format: yaml
     create: true
-
-    # Store images relative to each story.
-    # Example:
-    # src/user-story/my-story/
-    # ├── index.yaml
-    # └── story.png
-    media_folder: ''
-    public_folder: ''
-
+    
     fields:
-
-      # ==================================================
-      # BASIC STORY INFORMATION
-      # ==================================================
 
       - label: Title
         name: title
@@ -50,6 +36,7 @@ collections:
         widget: string
         required: true
         hint: "Folder name used for this story. Use lowercase letters, numbers and hyphens."
+        pattern: ['^[a-z0-9-]+$', 'Use lowercase letters, numbers and hyphens.']
 
       - label: Authored By
         name: authored_by
@@ -75,10 +62,6 @@ collections:
         required: true
         choose_url: false
 
-      # ==================================================
-      # METADATA
-      # ==================================================
-
       - label: Metadata
         name: metadata
         widget: object
@@ -90,7 +73,7 @@ collections:
           - label: Title
             name: title
             widget: string
-            required: false
+            required: true
 
           - label: Organization
             name: organization
@@ -102,6 +85,22 @@ collections:
             widget: string
             required: false
 
+          - label: Team Members
+            name: team_members
+            widget: list
+            required: false
+            allow_add: true
+            field: { label: Team Member, name: team_member, widget: string }
+
+          - label: Project Website
+            name: project_website
+            widget: string
+            required: true
+
+          - label: Summary
+            name: summary
+            widget: text
+            required: false
           - label: Industries
             name: industries
             widget: list
@@ -162,16 +161,11 @@ collections:
               name: community_support
               widget: string
 
-      # ==================================================
-      # TESTIMONIALS / QUOTES
-      # ==================================================
-
       - label: Testimonials
         name: quotes
         widget: list
-        required: false
+        required: true
         collapsed: true
-        allow_add: true
 
         fields:
 
@@ -188,17 +182,13 @@ collections:
           - label: Image
             name: image
             widget: image
-            required: false
+            required: true
             choose_url: false
-
-      # ==================================================
-      # MAP DATA
-      # ==================================================
 
       - label: Map Data
         name: map
         widget: object
-        required: false
+        required: true
         collapsed: true
 
         fields:
@@ -206,17 +196,17 @@ collections:
           - label: Author
             name: authored_by
             widget: string
-            required: false
+            required: true
 
           - label: Location
             name: location
             widget: string
-            required: false
+            required: true
 
           - label: Industries
             name: industries
             widget: list
-            required: false
+            required: true
             allow_add: true
             field:
               label: Industry
@@ -228,11 +218,7 @@ collections:
             widget: map
             type: Point
             decimals: 7
-            required: false
-
-      # ==================================================
-      # STORY BODY
-      # ==================================================
+            required: true
 
       - label: Body
         name: body_content
@@ -257,4 +243,3 @@ collections:
               label: Paragraph
               name: paragraph
               widget: markdown
-              
