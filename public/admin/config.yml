@@ -1,7 +1,7 @@
 backend:
   name: github
   repo: Vatsal-Verma/testing-workflow
-  branch: main
+  branch: master
   open_authoring: true
   squash_merges: true
   use_graphql: true
